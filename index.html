@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>Хоррор</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <div class="container h100" >
+    <div class="row h100 align-items-center slide-1">
+      <div class="col-12 text-center">
+        <h1>"Хоррор квест"</h1>
+        <p class="sunheader text-center">
+          Бойся своих слов<br>
+          <b></b>
+        </p>
+
+        <div class="header-buttons">
+          <button type="button" class="btn btn-dark btn-custom-accent startChatBtn">Начать</button><br>
+          <button type="button" class="btn btn-dark btn-custom-light worksBtn">пустая кнопка</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row h100 align-items-center slide-2">
+      <div class="col-12 text-center">
+        <h3></h3>
+        <div class="chat text-left">
+          <button type="button" class="btn chat-close"></button>
+          <div class="msg-area">
+
+
+
+          </div>
+          <div class="input" data-input="1" data-buttons="0">
+            <div class="row align-items-center h100">
+              <div class="col-11 col-input">
+                <input type="text" class="form-control" placeholder="Ваше сообщение">
+              </div>
+              <div class="col-1">
+                <button type="button" class="send"> <img src="img/ic_send.svg" alt=""> </button>
+              </div>
+              <!-- <div class="col-12 text-center">
+                <button type="button" class="btn btn-select">Студия</button>
+                <button type="button" class="btn btn-select">1к квартира</button>
+                <button type="button" class="btn btn-select">2к квартира</button>
+                <button type="button" class="btn btn-select">Дом</button>
+                <button type="button" class="btn btn-select">Дача</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="worksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-ex-lg modal-dark modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Старые файлы</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 gallery-items">
+              <a href="img/image_9.jpg" data-fancybox="images"><img src="img/Image_1.png" /></a><a href="img/IMG_2277.jpg" data-fancybox="images"><img src="img/Image_2.png" /></a><a href="img/IMG_2280.jpg" data-fancybox="images"><img src="img/Image_3.png" /></a><div class="clearfix"></div><a href="img/1.jpg" data-fancybox="images"><img src="img/Image_4.png" /></a><a href="img/IMG_2279.jpg" data-fancybox="images"><img src="img/Image_5.png" /></a><a href="img/IMG_2276.jpg" data-fancybox="images"><img src="img/Image_6.png" /></a><div class="clearfix"></div><a href="img/IMG_2281.jpg" data-fancybox="images"><img src="img/Image_7.png" /></a><a href="img/33.jpg" data-fancybox="images"><img src="img/Image_8.png" /></a><a href="img/19.jpg" data-fancybox="images"><img src="img/Image_9.png" /></a><div class="clearfix"></div><a href="img/image_9.jpg" data-fancybox="images"><img src="img/Image_1.png" /></a><a href="img/IMG_2277.jpg" data-fancybox="images"><img src="img/Image_2.png" /></a><a href="img/IMG_2280.jpg" data-fancybox="images"><img src="img/Image_3.png" /></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/chat-data.js"></script>
+    <script src="js/chat.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $().fancybox({
+            selector : '[data-fancybox="images"]',
+            loop     : true,
+            infobar  : false,
+            toolbar  : false
+        });
+      });
+    </script>
+  </body>
+
+</html>
